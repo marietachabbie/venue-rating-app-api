@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Malocco",
+    "description": "We are a friendly cafe in the heart of the city with excellent coffee, healthy cuisine, cosy interior",
+    "category": "cafe",
+    "rating": "5.0",
+    "review_count": "12",
+    "latitude": "40.178545",
+    "longitude": "44.522509",
+    "created_at": "2024-02-26",
+    "updated_at": "2024-02-26"
+  },
+  {
+    "name": "August",
+    "description": "If you can think it, we can bake it!",
+    "category": "cafe",
+    "rating": "4.9",
+    "review_count": "24",
+    "latitude": "40.188997",
+    "longitude": "44.515825",
+    "created_at": "2024-02-26",
+    "updated_at": "2024-02-26"
+  },
+  {
+    "name": "Degustation",
+    "description": "Become a gastrotourist with Degustation and make a 'tour' to countries with the richest cuisines!",
+    "category": "restaurant",
+    "rating": "4.8",
+    "review_count": "16",
+    "latitude": "40.203484",
+    "longitude": "44.499404",
+    "created_at": "2024-02-26",
+    "updated_at": "2024-02-26"
+  }
+]
