@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const dotenv = require("dotenv");
 dotenv.config();
 
+const ErrorHandler = require("./middlewares/ErrorHandler");
 const { runMigrations } = require("./migration");
 const homeRoute = require("./routes/home");
 const locationsRoute = require("./routes/locations");
@@ -11,6 +12,8 @@ const app = express();
 app.use(bodyParser.json());
 app.use("/", homeRoute);
 app.use("/api/locations", locationsRoute);
+
+app.use(ErrorHandler);
 
 runMigrations()
   .then(() => {

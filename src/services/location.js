@@ -1,7 +1,5 @@
 const { Location } = require("../models/location");
 
-// wrap all in try and catch
-
 module.exports = {
   getAll: async ({ page = 1, pageSize = 20, category }) => {
     const offset = page === 1 ? 0 : page * pageSize;
@@ -29,7 +27,6 @@ module.exports = {
   },
 
   updateByCategory: async (locationData) => {
-    // test for multiple
     await Location.update({
       name: locationData.name,
       description: locationData.description,
